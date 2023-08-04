@@ -1,1 +1,1 @@
-# Semantic-Segmentation-on-mindspore
+# Semantic-Segmentation-on-MindSpore
