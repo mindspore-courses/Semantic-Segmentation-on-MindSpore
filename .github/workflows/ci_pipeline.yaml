@@ -1,0 +1,36 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: CI Pipe
+
+on:
+  pull_request:
+    branches: [ "mian" ]
+    paths:
+      - '  /**'
+      - '.github/workflows/**'
+  push:
+    branches: [ "main" ]
+    paths:
+      - '  /**'
+
+permissions:
+  contents: read
+
+jobs:
+  pylint-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --user --upgrade pip==23.2.1
+        pip install -r requirements.txt
+    - name: Analysing the deploying_service code with pylint
+      run: |
+        pylint deploying_service --rcfile=.github/pylint.conf
+  
