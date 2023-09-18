@@ -1,2 +1,2 @@
-from .jpu_ms import *
-from .basic_ms import *
+from .jpu import *
+from .basic import *

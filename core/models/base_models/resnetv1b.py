@@ -1,4 +1,4 @@
-from mindspore import Tensor, nn, ops
+from mindspore import nn, ops
 
 __all__ = ['ResNetV1b', 'resnet18_v1b', 'resnet34_v1b', 'resnet50_v1b',
            'resnet101_v1b', 'resnet152_v1b', 'resnet152_v1s', 'resnet101_v1s', 'resnet50_v1s']

@@ -1,5 +1,6 @@
-import mindspore.nn as nn
 from mindspore.ops import operations as P
+import mindspore.nn as nn
+from mindspore import load_checkpoint, load_param_into_net
 
 
 class SeparableConv2d(nn.Cell):
@@ -375,9 +376,6 @@ class XceptionA(nn.Cell):
 
         return x
 
-
-import mindspore.nn as nn
-from mindspore import load_checkpoint, load_param_into_net
 
 # Constructor
 def get_xception(pretrained=False, root='~/.mindspore/models', **kwargs):
