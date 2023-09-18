@@ -1,7 +1,7 @@
 import math
 from mindspore import Tensor, nn, ops
 
-from core.nn1 import _ConvBNPReLU, _ConvBN, _BNPReLU
+from core.nn import _ConvBNPReLU, _ConvBN, _BNPReLU
 
 __all__ = ['EESP', 'EESPNet', 'eespnet']
 

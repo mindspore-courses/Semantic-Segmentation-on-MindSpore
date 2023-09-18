@@ -1,5 +1,4 @@
 """Custom losses."""
-import mindspore
 import mindspore.nn as nn
 import mindspore.ops as P
 

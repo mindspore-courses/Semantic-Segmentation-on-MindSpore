@@ -1,6 +1,6 @@
 """Basic Module for Semantic Segmentation"""
 
-from mindspore import Tensor, nn, ops
+from mindspore import nn, ops
 __all__ = ['_ConvBNPReLU', '_ConvBN', '_BNPReLU', '_ConvBNReLU', '_DepthwiseConv', 'InvertedResidual']
 
 
