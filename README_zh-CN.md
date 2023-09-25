@@ -3,7 +3,6 @@
 [English](/README.md) | 简体中文
 
 [![python-image]][python-url]
-[![pytorch-image]][pytorch-url]
 [![lic-image]][lic-url]
 
 <p align="center"><img width="100%" src="docs/weimar_000091_000019_gtFine_color.png" /></p>
